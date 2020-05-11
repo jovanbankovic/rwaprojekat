@@ -1,0 +1,96 @@
+{
+  "citaonica": [
+    {
+      "id": 1,
+      "ime": "Nikola Tesla",
+      "radiod": "08:00",
+      "radido": "20:00",
+      "uticnice": 5,
+      "mesta": 150,
+      "zauzeto": 0,
+      "tetkice": {
+        "1": 1
+      }
+    },
+    {
+      "id": 2,
+      "ime": "Stevan Sremac",
+      "radiod": "08:00",
+      "radido": "20:00",
+      "uticnice": 7,
+      "mesta": 40,
+      "zauzeto": 100,
+      "tetkice": {
+        "1": 2
+      }
+    },
+    {
+      "id": 3,
+      "ime": "Narodna biblioteka",
+      "radiod": "10:00",
+      "radido": "19:00",
+      "uticnice": 12,
+      "mesta": 50,
+      "zauzeto": 0,
+      "tetkice": {
+        "1": 3
+      }
+    }
+  ],
+  "tetkice": [
+    {
+      "id": 1,
+      "ime": "Jasna"
+    },
+    {
+      "id": 2,
+      "ime": "Sandra"
+    },
+    {
+      "id": 3,
+      "ime": "Marija"
+    }
+  ],
+  "clanovi": [
+    {
+      "ime": "Fff",
+      "prezime": "Ff",
+      "godina": "Ff",
+      "fakultet": "Ff",
+      "smer": "Ff",
+      "hrana": "Da",
+      "brmesta": "1",
+      "id": 1
+    },
+    {
+      "ime": "Fbbbb",
+      "prezime": "Bbb",
+      "godina": "Bbb",
+      "fakultet": "Bbb",
+      "smer": "Bbb",
+      "hrana": "Da",
+      "brmesta": "3",
+      "id": 2
+    },
+    {
+      "ime": "Fd",
+      "prezime": "Ss",
+      "godina": "Aa",
+      "fakultet": "Aa",
+      "smer": "Aa",
+      "hrana": "Da",
+      "brmesta": "1",
+      "id": 3
+    },
+    {
+      "ime": "Hh",
+      "prezime": "Hh",
+      "godina": "Hh",
+      "fakultet": "Hh",
+      "smer": "Hh",
+      "hrana": "Da",
+      "brmesta": "56",
+      "id": 4
+    }
+  ]
+}

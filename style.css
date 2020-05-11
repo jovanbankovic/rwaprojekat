@@ -1,0 +1,232 @@
+html,
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: sans-serif;
+}
+.novidiv
+{
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  max-height: 40%;
+}
+
+.citaonicadesc
+{
+    margin-top:35%;
+    display: block;
+    position: relative;
+}
+
+.descriptionCitaonice
+{
+    text-align: center;
+    display: block;
+}
+
+.listaTetkica ul, .listaTetkica
+{
+    list-style: inside;
+    display: inline-block;
+}
+
+.container
+{ 
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.gornjideo
+{
+    display:inline-block;
+    border: 1px solid black;
+    margin-top: 5%;
+    background-color: lightskyblue;
+    height: 60%;
+}
+
+#lista-dostupnih
+{
+    margin-top: 5%;
+    text-align: center;
+}
+
+#citaonica-list
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-top: 2px;
+    margin-bottom: 5%;
+}
+
+.citaonicamesta
+{
+    flex-grow: 1;
+}
+
+.legenda
+{
+  display:flex;
+  flex-direction: column;
+  margin: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+:root 
+{
+    --modal-duration: 1s;
+    --modal-color: lightskyblue;
+    
+}
+  
+body 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    font-size: 17px;
+    line-height: 1.6;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#modal-btn
+{
+      width: 20%;
+      margin-left: 40%;
+      margin-right: 30%;
+}
+
+.buttondiv
+  {
+      border: 1px solid black;
+      display:flex;
+      flex-direction: row;
+      background-color: lightskyblue;
+      padding: 1;
+  }
+  
+.divlevo, .divdesno
+  {
+      border: 1px solid black;
+      flex-wrap: 1;
+      margin: 15px;
+  }
+
+.mestazasedenje
+{
+
+      padding: 10px;
+      width: 10%;
+      border-radius: 2px;
+      margin: 2px;
+      cursor: pointer;
+      background-color: greenyellow;
+      position: relative;
+}
+
+.button 
+{
+    background: greenyellow;
+    padding: 1em 2em;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 3px;
+}
+  
+.button:hover 
+  {
+      background: greenyellow;
+  }
+  
+.modal, .modal1 
+  {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+.modal-content 
+  {
+      margin: 10% auto;
+      width: 60%;
+      box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+      animation-name: modalopen;
+      animation-duration: var(--modal-duration);
+  }
+  
+.modal-header h2,
+.modal-footer h3
+  {
+      margin: 0;
+  }
+  
+.modal-header 
+  {
+      background: var(--modal-color);
+      padding: 15px;
+      color: #fff;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+  }
+  
+.modal-body 
+{
+    
+      padding: 10px 20px;
+      background: #fff;
+      justify-content: center;
+}
+  
+.modal-footer 
+  {
+      background: var(--modal-color);
+      padding: 10px;
+      color: #fff;
+      text-align: center;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+  }
+  
+.close, .close1 
+  {
+      color: #ccc;
+      float: right;
+      font-size: 30px;
+      color: #fff;
+  }
+  
+.close:hover,
+.close:focus, 
+.close1:hover, 
+.close1:focus 
+{
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+}
+  
+@keyframes modalopen 
+{
+    from 
+    {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+  

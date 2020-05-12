@@ -7,9 +7,9 @@
       "radido": "20:00",
       "uticnice": 5,
       "mesta": 150,
-      "zauzeto": 0,
+      "zauzeto": 148,
       "tetkice": {
-        "1": 1
+        "1": 2
       }
     },
     {
@@ -18,7 +18,7 @@
       "radiod": "08:00",
       "radido": "20:00",
       "uticnice": 7,
-      "mesta": 40,
+      "mesta": 100,
       "zauzeto": 100,
       "tetkice": {
         "1": 2
@@ -91,6 +91,266 @@
       "hrana": "Da",
       "brmesta": "56",
       "id": 4
+    },
+    {
+      "ime": "Fds",
+      "prezime": "Fds",
+      "godina": "Fds",
+      "fakultet": "Fds",
+      "smer": "Fds",
+      "hrana": "Da",
+      "brmesta": "1",
+      "id": 5
+    },
+    {
+      "ime": "Sdxg",
+      "prezime": "Fdsgds",
+      "godina": "Fdsgds",
+      "fakultet": "Gds",
+      "smer": "Fg",
+      "hrana": "Da",
+      "brmesta": "4",
+      "id": 6
+    },
+    {
+      "ime": "Hgf",
+      "prezime": "Hgf",
+      "godina": "Hgf",
+      "fakultet": "Hgf",
+      "smer": "Hg",
+      "hrana": "Da",
+      "brmesta": "3",
+      "id": 7
+    },
+    {
+      "ime": "Jovan",
+      "prezime": "Bankovic",
+      "godina": "Elektronski",
+      "fakultet": "Rii",
+      "smer": "Rii",
+      "hrana": "Da",
+      "brmesta": "1",
+      "id": 8
+    },
+    {
+      "ime": "Nikola",
+      "prezime": "Antic",
+      "godina": "Treca",
+      "fakultet": "Elekt",
+      "smer": "Rii",
+      "hrana": "Da",
+      "brmesta": "3",
+      "id": 9
+    },
+    {
+      "ime": "Aleksandar",
+      "prezime": "Arsic",
+      "godina": "Rii",
+      "fakultet": "Elektorsnki",
+      "smer": "Rii",
+      "hrana": "Ne",
+      "brmesta": "5",
+      "id": 10
+    },
+    {
+      "ime": "Fsd",
+      "prezime": "Fsd",
+      "godina": "Fds",
+      "fakultet": "Fds",
+      "smer": "Fds",
+      "hrana": "Da",
+      "brmesta": "1",
+      "id": 11
+    },
+    {
+      "ime": "Sdf",
+      "prezime": "Fds",
+      "godina": "Dfs",
+      "fakultet": "Fds",
+      "smer": "Sdf",
+      "hrana": "Da",
+      "brmesta": "1",
+      "id": 12
+    },
+    {
+      "ime": "Fsd",
+      "prezime": "Fds",
+      "godina": "Fds",
+      "fakultet": "Fds",
+      "smer": "Fds",
+      "hrana": "Da",
+      "brmesta": "1",
+      "id": 13
+    },
+    {
+      "ime": "Fsd",
+      "prezime": "Sdf",
+      "godina": "Sdf",
+      "fakultet": "Sdf",
+      "smer": "Sdf",
+      "hrana": "Da",
+      "brmesta": "1",
+      "id": 14
+    },
+    {
+      "ime": "Fsd",
+      "prezime": "Dfs",
+      "godina": "Fds",
+      "fakultet": "Fds",
+      "smer": "Fsd",
+      "hrana": "Da",
+      "brmesta": "1",
+      "id": 15
+    },
+    {
+      "ime": "Fds",
+      "prezime": "Dfs",
+      "godina": "Fds",
+      "fakultet": "Dsf",
+      "smer": "Fds",
+      "hrana": "Da",
+      "brmesta": "1",
+      "id": 16
+    },
+    {
+      "ime": "Gf",
+      "prezime": "D",
+      "godina": "Df",
+      "fakultet": "Df",
+      "smer": "Gd",
+      "hrana": "Da",
+      "brmesta": "2",
+      "id": 17
+    },
+    {
+      "ime": "Sfd",
+      "prezime": "Dsf",
+      "godina": "Fds",
+      "fakultet": "Fsd",
+      "smer": "Fds",
+      "hrana": "Da",
+      "brmesta": "1",
+      "id": 18
+    },
+    {
+      "ime": "Sdf",
+      "prezime": "Gfdg",
+      "godina": "Fgdg",
+      "fakultet": "Fd",
+      "smer": "Gfd",
+      "hrana": "Da",
+      "brmesta": "2",
+      "id": 19
+    },
+    {
+      "ime": "Jfg",
+      "prezime": "Gf",
+      "godina": "Hgf",
+      "fakultet": "Hg",
+      "smer": "Hgf",
+      "hrana": "Ne",
+      "brmesta": "3",
+      "id": 20
+    },
+    {
+      "ime": "Das",
+      "prezime": "Dsa",
+      "godina": "Das",
+      "fakultet": "Dsa",
+      "smer": "Dsa",
+      "hrana": "Ne",
+      "brmesta": "1",
+      "id": 21
+    },
+    {
+      "ime": "Gg",
+      "prezime": "Gg",
+      "godina": "Gg",
+      "fakultet": "Gg",
+      "smer": "Gg",
+      "hrana": "Da",
+      "brmesta": "3",
+      "id": 22
+    },
+    {
+      "ime": "Gghhh",
+      "prezime": "Ghh",
+      "godina": "Hhh",
+      "fakultet": "H",
+      "smer": "Hhh",
+      "hrana": "Ne",
+      "brmesta": "5",
+      "id": 23
+    },
+    {
+      "ime": "Jovan",
+      "prezime": "Bankovic",
+      "godina": "Treca",
+      "fakultet": "Elektronski",
+      "smer": "Rii",
+      "hrana": "Da",
+      "brmesta": "1",
+      "id": 24
+    },
+    {
+      "ime": "Nikola",
+      "prezime": "Antic",
+      "godina": "Treca",
+      "fakultet": "Elektronski",
+      "smer": "Rii",
+      "hrana": "Ne",
+      "brmesta": "3",
+      "id": 25
+    },
+    {
+      "ime": "Aleksandar",
+      "prezime": "Arsic",
+      "godina": "Treca",
+      "fakultet": "Elektronski",
+      "smer": "Rii",
+      "hrana": "Da",
+      "brmesta": "5",
+      "id": 26
+    },
+    {
+      "ime": "Milica",
+      "prezime": "Jovanovic",
+      "godina": "Treca",
+      "fakultet": "Ekonomski",
+      "smer": "Nema",
+      "hrana": "Ne",
+      "brmesta": "7",
+      "id": 27
+    },
+    {
+      "ime": "Jovan",
+      "prezime": "Bankovic",
+      "godina": "Elektronski",
+      "fakultet": "Rii",
+      "smer": "Rii",
+      "hrana": "Da",
+      "brmesta": "1",
+      "id": 28
+    },
+    {
+      "ime": "Jovan",
+      "prezime": "Bankovic",
+      "godina": "Elektronski",
+      "fakultet": "Rii",
+      "smer": "Ri",
+      "hrana": "Da",
+      "brmesta": "1",
+      "id": 29
+    },
+    {
+      "ime": "Jovan",
+      "prezime": "Bankovic",
+      "godina": "Elektronski",
+      "fakultet": "Rii",
+      "smer": "Rii",
+      "hrana": "Da",
+      "brmesta": "1",
+      "id": 30
     }
   ]
 }

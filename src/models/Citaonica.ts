@@ -39,11 +39,14 @@ export default class Citaonica
             host.appendChild(descriptionCitaonice);
             descriptionCitaonice.className="descriptionCitaonice";
 
-            descriptionCitaonice.innerHTML = this.ime + "<br>" + "Radno vreme: " + this.radiod + "/" + this.radido + "<br>" + "Broj slobodnih mesta: " + this.mesta + "<br>" + "Zauzeto: " + this.zauzeto + "<br>" + "Broj uticnica: " +this.uticnice + "<br>" + "Lista dezurnih tetkica: ";
+            descriptionCitaonice.innerHTML = this.ime + "<br>" + "Radno vreme: " + this.radiod + "/" + this.radido + "<br>" + "Broj uticnica: " +this.uticnice + "<br>" + "Lista dezurnih tetkica: ";
             const ulCitaonica = document.createElement("ul");
             ulCitaonica.className="listaTetkica";
+            ulCitaonica.id="ulCitaonica";
 		    this.tetkice.map((tetkica) => tetkica.drawListOfCleaningLadies(ulCitaonica));
             descriptionCitaonice.appendChild(ulCitaonica);
+
+            this.drawTakenLabelLibrary(ulCitaonica);
             
             const buttondiv=document.createElement('div');
             ulCitaonica.appendChild(buttondiv);
@@ -83,6 +86,14 @@ export default class Citaonica
             divdesno.appendChild(mestoucit2);
         }  
 
+    }
+    
+    drawTakenLabelLibrary(host: HTMLUListElement)
+    {
+        const takenLabel = document.createElement('label');
+        takenLabel.innerHTML="Zauzeto: " + this.zauzeto.toString();
+        takenLabel.id="takenlabel";
+        host.appendChild(takenLabel);
     }
 
     paintSockets()

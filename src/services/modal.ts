@@ -19,11 +19,14 @@ export function nacrtajModal(host: HTMLDivElement)
     p1.innerHTML="Na pocetku Vam je ponudjena lista dostupnih citaonica. ";
     modalbody.appendChild(p1);
     const p2 = document.createElement('p');
-    p2.innerHTML="Unosenje PUNOG imena citaonice u polje ispod liste otvorice Vam izabranu citaonicu sa svim njenim detaljima koji su: <br> - Ime citaonice <br> - Radno vreme citaonice <br> - Broj slobodnih mesta <br> - Pitanje da li koristite laptop ili ne (Ukoliko koristite, prilikom stikliranja, bice vam dostupna samo mesta pored kojih postoji uticnica. Ukoliko ne koristite mozete da odaberete bilo koje mesto koje je slobodno) <br> - Prikaz slobodnih i zauzetih mesta (Zelena - slobodna / Crvena - zauzeta)";
+    p2.innerHTML="Unosenje PUNOG imena citaonice u polje ispod liste otvorice Vam izabranu citaonicu sa svim njenim detaljima koji su: <br> - Ime citaonice <br> - Radno vreme citaonice <br> - Broj mesta u citaonici <br> - Broj zauzetih mesta <br> - Broj uticnica u citaonici <br> - Dezurne tetkice <br> - Prikaz slobodnih i zauzetih mesta (Zelena - slobodna / Crvena - zauzeta)";
     modalbody.appendChild(p2);
     const p3 = document.createElement('p');
-    p3.innerHTML="Prilikom prijavljivanja (Klikom na odredjeno mesto), u obavezi ste da popunite svoje osnovne podatke, kao i da odgovorite na pitanje da li sa sobom imate hranu ili pice. <br> Unosenje hrane i pica je zabranjeno, tako da postoji sansa da ako unesete nesto budete izbaceni iz citaonice usled provere.";
+    p3.innerHTML="Prijava u citaonicu se vrsi popunjavanjem podataka koji se nalaze sa desne strane liste i klikom na dugme (Sacuvaj prijavu) <br> Nakon prijavljivanja u grafickom prikazu citaonice bice prikazano vase mesto gde ste se prijavili.";
     modalbody.appendChild(p3);
+    const p4 = document.createElement('p');
+    p4.innerHTML="VAZNO OBAVESTENJE! Tetkice u citaonici na svakih 3 minuta rade proveru unosenja hrane u citaonicu, jer je to zabranjeno. <br> Svako ko je u prijavi stavio Hrana: Da ima 30% sanse da bude izbacen iz citaonice."
+    modalbody.appendChild(p4);
 
     const modalfooter = document.createElement('div');
     modalfooter.className="modal-footer";

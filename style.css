@@ -14,7 +14,7 @@ body {
 
 .citaonicadesc
 {
-    margin-top:35%;
+    margin-top:45%;
     display: block;
     position: relative;
 }
@@ -113,9 +113,11 @@ body
   
 .divlevo, .divdesno
   {
-      border: 1px solid black;
+      border: 2px solid rgb(36, 36, 36);
+      background-color: lightsteelblue;
       flex-wrap: 1;
       margin: 15px;
+
   }
 
 .mestazasedenje
@@ -144,19 +146,6 @@ body
 .button:hover 
   {
       background: greenyellow;
-  }
-  
-.modal, .modal1 
-  {
-      display: none;
-      position: fixed;
-      z-index: 1;
-      left: 0;
-      top: 0;
-      height: 100%;
-      width: 100%;
-      overflow: auto;
-      background-color: rgba(0, 0, 0, 0.5);
   }
   
 .modal-content 
@@ -200,33 +189,3 @@ body
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;
   }
-  
-.close, .close1 
-  {
-      color: #ccc;
-      float: right;
-      font-size: 30px;
-      color: #fff;
-  }
-  
-.close:hover,
-.close:focus, 
-.close1:hover, 
-.close1:focus 
-{
-      color: #000;
-      text-decoration: none;
-      cursor: pointer;
-}
-  
-@keyframes modalopen 
-{
-    from 
-    {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-}
-  

@@ -1,55 +1,51 @@
 import Citaonica from "../models/citaonica";
 import Tetkica from "../models/tetkica";
-import { fromEvent, from, zip, Observable, of, Observer, merge, timer } from "rxjs";
-import { debounceTime, map, switchMap, filter, take, mergeMap, tap, delay, takeUntil } from "rxjs/operators";
+import { fromEvent, from, zip, Observable, of, Observer, merge} from "rxjs";
+import { debounceTime, map, switchMap, filter, take, takeUntil } from "rxjs/operators";
 import Clan from "../models/clan";
 
 const clanovi = new Array();
-
 const DATA_BASE_URL:string = "http://localhost:3000/"
 
-export async function getCitaonica() {
+export async function getLibrary() {
 	const citaonicaResponse = await fetch(DATA_BASE_URL + "citaonica");
 	const citaonicaNiz = await citaonicaResponse.json();
 	let citaonica = citaonicaNiz.map((citaonicaLiteral: Citaonica) => Citaonica.createCitaonicaFromLiteral(citaonicaLiteral));
 	return citaonica;
 }
 
-export function inputEVENT(inputElement: HTMLInputElement, listaTetkica: HTMLLIElement) {
+export function eventOnInput(inputElement: HTMLInputElement, listaTetkica: HTMLLIElement) {
 	const citaonicaDescription = document.getElementById("citaonica-desc") as HTMLDivElement;
 	fromEvent(inputElement, "input").pipe(debounceTime(1000),
-	map(() => uzmiinput(inputElement)), 
-	switchMap(ime => { return getOpisCitaonice(ime)  }))
-		.subscribe((citaonica) => crtajCitaonicu(citaonica, citaonicaDescription));
+	take(3),
+	map(() => getInputNameValue(inputElement)), 
+	switchMap(ime => { return getDescriptionOfLibrary(ime)  }))
+		.subscribe((citaonica) => drawLibrary(citaonica, citaonicaDescription));
 }
 
-function uzmiinput(inputElement: HTMLInputElement)
-{
-	return inputElement.value;
-}
+function getInputNameValue(inputElement: HTMLInputElement) { return inputElement.value; }
 
-function crtajCitaonicu(citaonica: any, citaonicaDescription: HTMLDivElement)
+function drawLibrary(citaonica: any, citaonicaDescription: HTMLDivElement)
 {
 	citaonica.drawDescriptionCitaonica(citaonicaDescription);
 }
 
-function getOpisCitaonice(imeCitaonice: any) { 
-	const queryStringCitaonica = "?ime=" + formatImeCitaoniceToDb(imeCitaonice);
-  	return getCitaonicaDetails(queryStringCitaonica).pipe(switchMap(citaonicaLiteral => { 
-		const citaonica = createCitaonicaOrError(citaonicaLiteral);
-  		return getCitaonicaObservable(citaonicaLiteral, citaonica);
+function getDescriptionOfLibrary(imeCitaonice: any) { 
+	const queryStringCitaonica = "?ime=" + formatNameOfLibraryToDb(imeCitaonice);
+  	return getLibraryDetails(queryStringCitaonica).pipe(switchMap(citaonicaLiteral => { 
+		const citaonica = createLibraryOrError(citaonicaLiteral);
+  		return getLibraryObservable(citaonicaLiteral, citaonica);
     })
   );
 }
 
-function createCitaonicaOrError(citaonicaLiteral: Citaonica) {
-	//updateCitaonice(citaonicaLiteral);
+function createLibraryOrError(citaonicaLiteral: Citaonica) {
 	return citaonicaLiteral !== undefined
 		? Citaonica.createCitaonicaFromLiteral(citaonicaLiteral)
 		: Citaonica.createErrorCitaonica();
 }
 
-function getCitaonicaDetails(queryStringCitaonica: string)
+function getLibraryDetails(queryStringCitaonica: string)
 {
 	return from(
 		fetch(DATA_BASE_URL + "citaonica/" + queryStringCitaonica).then(response => 
@@ -58,7 +54,7 @@ function getCitaonicaDetails(queryStringCitaonica: string)
 	).pipe(map(ime => ime[0]));
 }
 
-function getCitaonicaObservable(citaonicaLiteral: Citaonica, citaonica: Citaonica) {
+function getLibraryObservable(citaonicaLiteral: Citaonica, citaonica: Citaonica) {
 	let citaonicaObservable;
 	if (citaonicaLiteral !== undefined) {
 	  const tetkiceIDs = getValuesFromObjectArray(citaonicaLiteral["tetkice"]);
@@ -73,7 +69,7 @@ function getCitaonicaObservable(citaonicaLiteral: Citaonica, citaonica: Citaonic
   }
   
 
-function formatImeCitaoniceToDb(imeCitaonice: string) {
+function formatNameOfLibraryToDb(imeCitaonice: string) {
 	imeCitaonice = imeCitaonice.toLowerCase();
 	let allWords = imeCitaonice.split(" ");
 	let modifiedWords = allWords.map(
@@ -104,7 +100,7 @@ export function onPrijavaEvent(button: HTMLButtonElement, inputBrojMesta: HTMLIn
 {
 	const InputCitaonice= (<HTMLInputElement><unknown>document.getElementById('citaonica-input'));
 	const test = fromEvent(inputBrojMesta, 'input').pipe(debounceTime(1000),
-	map(()=>uzmiinput(InputCitaonice)),
+	map(()=>getInputNameValue(InputCitaonice)),
 	switchMap(ime=>getZauzeto(ime)));
 
 	const checkFull = test.pipe(filter(val=>val<1))
@@ -188,11 +184,12 @@ const addUser = async (user: Array<any>) => {
 	const clan=new Clan(user[0], user[1], user[2], user[3], user[4], user[5], user[6]);
 	clanovi.push(clan);
 
+	setInterval(removeUser,10000, clanovi); //2 minuta
+	
 	const ind = (document.getElementById('citaonica-input') as HTMLInputElement).value;
-	const objCitaonica = getOpisCitaonice(ind);
+	const objCitaonica = getDescriptionOfLibrary(ind);
 	objCitaonica.subscribe(x=>updateZauzetaMesta(x));
 	//updateZauzetaMesta(objCitaonica);
-	setInterval(removeUser,1000000, clanovi); //1 minut
 
 	const settings = {
 		method: 'POST',
@@ -202,7 +199,6 @@ const addUser = async (user: Array<any>) => {
 			'Content-Type': 'application/json',
 		}
 	}
-
     const response = await fetch(DATA_BASE_URL+"clanovi/", settings)
     .then(res => res.json()).then(response=>console.log(response));
 }
@@ -213,10 +209,12 @@ function removeUser(niz:Array<any>) : void
 		const sansa = Math.floor(Math.random() * 10);
 		const izborHrane = document.getElementById('hranaselect') as HTMLSelectElement;
 		const result = izborHrane.options[izborHrane.selectedIndex].text;
-		console.log(sansa);
-		if(result == "Da" && sansa>=8)
+		if(result == "Da" && sansa>=7)
 		{
-			console.log(element.brmesta);
+			const ind = (document.getElementById('citaonica-input') as HTMLInputElement).value;
+			const objCitaonica = getDescriptionOfLibrary(ind);
+			objCitaonica.subscribe(x=>updateZauzetaMestaWhenKicked(x));
+			console.log(sansa);
 			const seat = element.brmesta;
 			const button = document.getElementById('mestosed'+seat) as HTMLButtonElement;
 			button.style.background="greenyellow";
@@ -251,7 +249,7 @@ const updateCitaonice = async (citaonica: Citaonica) =>
 
 async function uzmiCitaonicu(ind: string)
 {
-	const name = formatImeCitaoniceToDb(ind);
+	const name = formatNameOfLibraryToDb(ind);
 	const citaonica = await fetch('http://localhost:3000/citaonica' + "?ime="+name);
 	const jsonCitaonica = await citaonica.json();
 
@@ -262,14 +260,10 @@ async function uzmiCitaonicu(ind: string)
 const updateZauzetaMesta = async (objCitaonica: any) =>
 {
 	const citaonicaObject = objCitaonica;
-	console.log("Citaj: ", citaonicaObject.zauzeto);
 	const tetkicaObj=
-		{
+	{
 			"1": 2
-		}
-	
-	console.log("bra");
-	console.log(citaonicaObject);
+	}
 	const settings = {
 		method: 'PUT',
 		body: JSON.stringify({
@@ -289,15 +283,48 @@ const updateZauzetaMesta = async (objCitaonica: any) =>
 	}
 	const citaonicaDescription = document.getElementById("citaonica-desc") as HTMLDivElement;
 	const response = await fetch(DATA_BASE_URL+'citaonica/'+(await citaonicaObject).id,settings)
-	.then(res => res.json()).then(response=>console.log(response));
+	.then(res => res.json()).then(response=>drawTakenLabel(response.zauzeto));
 }
 
 function getZauzeto(ime: string)
 {
-	const citaonicaObj = formatImeCitaoniceToDb(ime);
+	const citaonicaObj = formatNameOfLibraryToDb(ime);
 	const cit = uzmiCitaonicu(citaonicaObj);
 	const citaonicaZauzeto = cit.then((resolve)=> {return resolve.mesta-resolve.zauzeto;})
 	console.log("test");
 	console.log(citaonicaZauzeto);
 	return citaonicaZauzeto;
+}
+
+const updateZauzetaMestaWhenKicked = async (objCitaonica: any) =>
+{
+	const citaonicaObject = objCitaonica;
+	const tetkicaObj=
+		{
+			"1": 2
+		}
+	const settings = {
+		method: 'PUT',
+		body: JSON.stringify({
+			id:(citaonicaObject).id,
+			ime:(citaonicaObject).ime,
+			radiod:(citaonicaObject).radiod,
+			radido:(citaonicaObject).radido,
+			uticnice:(citaonicaObject).uticnice,
+			mesta:(citaonicaObject).mesta,
+			zauzeto:citaonicaObject.zauzeto-1,
+			tetkice:tetkicaObj
+		}),
+		headers: {
+			'Accept': 'application/json',
+			'Content-Type': 'application/json'
+		}
+	}
+	const response = await fetch(DATA_BASE_URL+'citaonica/'+(await citaonicaObject).id,settings)
+	.then(res => res.json()).then(response=>drawTakenLabel(response.zauzeto));
+}
+
+function drawTakenLabel(zauzeto:number)
+{
+	(document.getElementById("takenlabel") as HTMLLabelElement).innerHTML="Zauzeto: " + zauzeto;
 }

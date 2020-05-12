@@ -1,356 +1,146 @@
 {
-  "citaonica": [
+  "libraries": [
     {
       "id": 1,
-      "ime": "Nikola Tesla",
-      "radiod": "08:00",
-      "radido": "20:00",
-      "uticnice": 5,
-      "mesta": 150,
-      "zauzeto": 148,
-      "tetkice": {
+      "name": "Nikola Tesla",
+      "worksFrom": "08:00",
+      "worksTo": "20:00",
+      "sockets": 5,
+      "spots": 150,
+      "takenSpots": 147,
+      "cleaningLadies": {
         "1": 2
       }
     },
     {
       "id": 2,
-      "ime": "Stevan Sremac",
-      "radiod": "08:00",
-      "radido": "20:00",
-      "uticnice": 7,
-      "mesta": 100,
-      "zauzeto": 100,
-      "tetkice": {
+      "name": "Stevan Sremac",
+      "worksFrom": "08:00",
+      "worksTo": "20:00",
+      "sockets": 7,
+      "spots": 100,
+      "takenSpots": 98,
+      "cleaningLadies": {
         "1": 2
       }
     },
     {
       "id": 3,
-      "ime": "Narodna biblioteka",
-      "radiod": "10:00",
-      "radido": "19:00",
-      "uticnice": 12,
-      "mesta": 50,
-      "zauzeto": 0,
-      "tetkice": {
-        "1": 3
+      "name": "Dositej Obradovic",
+      "worksFrom": "10:00",
+      "worksTo": "19:00",
+      "sockets": 12,
+      "spots": 50,
+      "takenSpots": 47,
+      "cleaningLadies": {
+        "1": 2
       }
     }
   ],
-  "tetkice": [
+  "cleaningLadies": [
     {
       "id": 1,
-      "ime": "Jasna"
+      "clName": "Jasna"
     },
     {
       "id": 2,
-      "ime": "Sandra"
+      "clName": "Sandra"
     },
     {
       "id": 3,
-      "ime": "Marija"
+      "clName": "Marija"
     }
   ],
-  "clanovi": [
+  "members": [
     {
-      "ime": "Fff",
-      "prezime": "Ff",
-      "godina": "Ff",
-      "fakultet": "Ff",
-      "smer": "Ff",
-      "hrana": "Da",
-      "brmesta": "1",
+      "firstName": "A",
+      "lastName": "A",
+      "yearOfStudy": "A",
+      "faculty": "A",
+      "course": "A",
+      "food": "Da",
+      "spotNumber": "1",
       "id": 1
     },
     {
-      "ime": "Fbbbb",
-      "prezime": "Bbb",
-      "godina": "Bbb",
-      "fakultet": "Bbb",
-      "smer": "Bbb",
-      "hrana": "Da",
-      "brmesta": "3",
+      "firstName": "B",
+      "lastName": "B",
+      "yearOfStudy": "B",
+      "faculty": "B",
+      "course": "B",
+      "food": "Ne",
+      "spotNumber": "2",
       "id": 2
     },
     {
-      "ime": "Fd",
-      "prezime": "Ss",
-      "godina": "Aa",
-      "fakultet": "Aa",
-      "smer": "Aa",
-      "hrana": "Da",
-      "brmesta": "1",
+      "firstName": "A",
+      "lastName": "A",
+      "yearOfStudy": "A",
+      "faculty": "A",
+      "course": "A",
+      "food": "Da",
+      "spotNumber": "1",
       "id": 3
     },
     {
-      "ime": "Hh",
-      "prezime": "Hh",
-      "godina": "Hh",
-      "fakultet": "Hh",
-      "smer": "Hh",
-      "hrana": "Da",
-      "brmesta": "56",
+      "firstName": "B",
+      "lastName": "B",
+      "yearOfStudy": "B",
+      "faculty": "B",
+      "course": "B",
+      "food": "Ne",
+      "spotNumber": "2",
       "id": 4
     },
     {
-      "ime": "Fds",
-      "prezime": "Fds",
-      "godina": "Fds",
-      "fakultet": "Fds",
-      "smer": "Fds",
-      "hrana": "Da",
-      "brmesta": "1",
+      "firstName": "Aaa",
+      "lastName": "Aaa",
+      "yearOfStudy": "Aaa",
+      "faculty": "Aaa",
+      "course": "Aaa",
+      "food": "Da",
+      "spotNumber": "1",
       "id": 5
     },
     {
-      "ime": "Sdxg",
-      "prezime": "Fdsgds",
-      "godina": "Fdsgds",
-      "fakultet": "Gds",
-      "smer": "Fg",
-      "hrana": "Da",
-      "brmesta": "4",
+      "firstName": "Bbb",
+      "lastName": "Bbb",
+      "yearOfStudy": "Bbb",
+      "faculty": "Bbb",
+      "course": "Bbb",
+      "food": "Ne",
+      "spotNumber": "2",
       "id": 6
     },
     {
-      "ime": "Hgf",
-      "prezime": "Hgf",
-      "godina": "Hgf",
-      "fakultet": "Hgf",
-      "smer": "Hg",
-      "hrana": "Da",
-      "brmesta": "3",
+      "firstName": "Bccc",
+      "lastName": "Ccc",
+      "yearOfStudy": "Cc",
+      "faculty": "Ccc",
+      "course": "Ccc",
+      "food": "Da",
+      "spotNumber": "1",
       "id": 7
     },
     {
-      "ime": "Jovan",
-      "prezime": "Bankovic",
-      "godina": "Elektronski",
-      "fakultet": "Rii",
-      "smer": "Rii",
-      "hrana": "Da",
-      "brmesta": "1",
+      "firstName": "Sdf",
+      "lastName": "Dfs",
+      "yearOfStudy": "Fdssg",
+      "faculty": "Ggg",
+      "course": "Ggg",
+      "food": "Da",
+      "spotNumber": "1",
       "id": 8
     },
     {
-      "ime": "Nikola",
-      "prezime": "Antic",
-      "godina": "Treca",
-      "fakultet": "Elekt",
-      "smer": "Rii",
-      "hrana": "Da",
-      "brmesta": "3",
+      "firstName": "Aaa",
+      "lastName": "Aaa",
+      "yearOfStudy": "Aaa",
+      "faculty": "Bbb",
+      "course": "Ccc",
+      "food": "Da",
+      "spotNumber": "1",
       "id": 9
-    },
-    {
-      "ime": "Aleksandar",
-      "prezime": "Arsic",
-      "godina": "Rii",
-      "fakultet": "Elektorsnki",
-      "smer": "Rii",
-      "hrana": "Ne",
-      "brmesta": "5",
-      "id": 10
-    },
-    {
-      "ime": "Fsd",
-      "prezime": "Fsd",
-      "godina": "Fds",
-      "fakultet": "Fds",
-      "smer": "Fds",
-      "hrana": "Da",
-      "brmesta": "1",
-      "id": 11
-    },
-    {
-      "ime": "Sdf",
-      "prezime": "Fds",
-      "godina": "Dfs",
-      "fakultet": "Fds",
-      "smer": "Sdf",
-      "hrana": "Da",
-      "brmesta": "1",
-      "id": 12
-    },
-    {
-      "ime": "Fsd",
-      "prezime": "Fds",
-      "godina": "Fds",
-      "fakultet": "Fds",
-      "smer": "Fds",
-      "hrana": "Da",
-      "brmesta": "1",
-      "id": 13
-    },
-    {
-      "ime": "Fsd",
-      "prezime": "Sdf",
-      "godina": "Sdf",
-      "fakultet": "Sdf",
-      "smer": "Sdf",
-      "hrana": "Da",
-      "brmesta": "1",
-      "id": 14
-    },
-    {
-      "ime": "Fsd",
-      "prezime": "Dfs",
-      "godina": "Fds",
-      "fakultet": "Fds",
-      "smer": "Fsd",
-      "hrana": "Da",
-      "brmesta": "1",
-      "id": 15
-    },
-    {
-      "ime": "Fds",
-      "prezime": "Dfs",
-      "godina": "Fds",
-      "fakultet": "Dsf",
-      "smer": "Fds",
-      "hrana": "Da",
-      "brmesta": "1",
-      "id": 16
-    },
-    {
-      "ime": "Gf",
-      "prezime": "D",
-      "godina": "Df",
-      "fakultet": "Df",
-      "smer": "Gd",
-      "hrana": "Da",
-      "brmesta": "2",
-      "id": 17
-    },
-    {
-      "ime": "Sfd",
-      "prezime": "Dsf",
-      "godina": "Fds",
-      "fakultet": "Fsd",
-      "smer": "Fds",
-      "hrana": "Da",
-      "brmesta": "1",
-      "id": 18
-    },
-    {
-      "ime": "Sdf",
-      "prezime": "Gfdg",
-      "godina": "Fgdg",
-      "fakultet": "Fd",
-      "smer": "Gfd",
-      "hrana": "Da",
-      "brmesta": "2",
-      "id": 19
-    },
-    {
-      "ime": "Jfg",
-      "prezime": "Gf",
-      "godina": "Hgf",
-      "fakultet": "Hg",
-      "smer": "Hgf",
-      "hrana": "Ne",
-      "brmesta": "3",
-      "id": 20
-    },
-    {
-      "ime": "Das",
-      "prezime": "Dsa",
-      "godina": "Das",
-      "fakultet": "Dsa",
-      "smer": "Dsa",
-      "hrana": "Ne",
-      "brmesta": "1",
-      "id": 21
-    },
-    {
-      "ime": "Gg",
-      "prezime": "Gg",
-      "godina": "Gg",
-      "fakultet": "Gg",
-      "smer": "Gg",
-      "hrana": "Da",
-      "brmesta": "3",
-      "id": 22
-    },
-    {
-      "ime": "Gghhh",
-      "prezime": "Ghh",
-      "godina": "Hhh",
-      "fakultet": "H",
-      "smer": "Hhh",
-      "hrana": "Ne",
-      "brmesta": "5",
-      "id": 23
-    },
-    {
-      "ime": "Jovan",
-      "prezime": "Bankovic",
-      "godina": "Treca",
-      "fakultet": "Elektronski",
-      "smer": "Rii",
-      "hrana": "Da",
-      "brmesta": "1",
-      "id": 24
-    },
-    {
-      "ime": "Nikola",
-      "prezime": "Antic",
-      "godina": "Treca",
-      "fakultet": "Elektronski",
-      "smer": "Rii",
-      "hrana": "Ne",
-      "brmesta": "3",
-      "id": 25
-    },
-    {
-      "ime": "Aleksandar",
-      "prezime": "Arsic",
-      "godina": "Treca",
-      "fakultet": "Elektronski",
-      "smer": "Rii",
-      "hrana": "Da",
-      "brmesta": "5",
-      "id": 26
-    },
-    {
-      "ime": "Milica",
-      "prezime": "Jovanovic",
-      "godina": "Treca",
-      "fakultet": "Ekonomski",
-      "smer": "Nema",
-      "hrana": "Ne",
-      "brmesta": "7",
-      "id": 27
-    },
-    {
-      "ime": "Jovan",
-      "prezime": "Bankovic",
-      "godina": "Elektronski",
-      "fakultet": "Rii",
-      "smer": "Rii",
-      "hrana": "Da",
-      "brmesta": "1",
-      "id": 28
-    },
-    {
-      "ime": "Jovan",
-      "prezime": "Bankovic",
-      "godina": "Elektronski",
-      "fakultet": "Rii",
-      "smer": "Ri",
-      "hrana": "Da",
-      "brmesta": "1",
-      "id": 29
-    },
-    {
-      "ime": "Jovan",
-      "prezime": "Bankovic",
-      "godina": "Elektronski",
-      "fakultet": "Rii",
-      "smer": "Rii",
-      "hrana": "Da",
-      "brmesta": "1",
-      "id": 30
     }
   ]
 }

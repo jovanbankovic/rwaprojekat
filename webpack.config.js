@@ -8,6 +8,7 @@ devtool:'inline-source-map',
 resolve: {
   extensions: ['.ts', '.js', '.json']
 },
+
 output:{
 path:path.resolve(__dirname,'dist'),
 filename:'bundle.js',},

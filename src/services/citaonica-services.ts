@@ -188,7 +188,6 @@ const addUser = async (user: Array<any>) => {
 	const objCitaonica = getLibraryDesc(ind);
 	objCitaonica.subscribe(x=>updateTakenSpots(x));
 	//updateZauzetaMesta(objCitaonica);
-
 	const settings = {
 		method: 'POST',
 		body: JSON.stringify(member),
@@ -205,9 +204,7 @@ function removeUser(members:Array<any>) : void
 {
 	members.forEach(element => {
 		const chance = Math.floor(Math.random() * 10);
-		const foodChoice = document.getElementById('hranaselect') as HTMLSelectElement;
-		const result = foodChoice.options[foodChoice.selectedIndex].text;
-		console.log("Rezultat: " + result + " Sansa: " + chance);
+		const result = element.food;
 		if(result == "Da" && chance>=7)
 		{
 			const ind = (document.getElementById('citaonica-input') as HTMLInputElement).value;

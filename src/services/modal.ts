@@ -52,11 +52,6 @@ export function modalPrijava(host:HTMLDivElement)
     headertext.id="modal-header1";
     modalheader.appendChild(headertext);
 
-    const spanX = document.createElement('span');
-    spanX.innerHTML="×";
-    spanX.className="close1";
-    modalheader.appendChild(spanX);
-
     const modalbody = document.createElement('div');
     modalcontent.appendChild(modalbody);
     modalbody.className="modal-body";

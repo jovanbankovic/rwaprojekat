@@ -7,7 +7,7 @@
       "worksTo": "20:00",
       "sockets": 5,
       "spots": 150,
-      "takenSpots": 147,
+      "takenSpots": 148,
       "cleaningLadies": {
         "1": 2
       }
@@ -31,7 +31,7 @@
       "worksTo": "19:00",
       "sockets": 12,
       "spots": 50,
-      "takenSpots": 47,
+      "takenSpots": 49,
       "cleaningLadies": {
         "1": 2
       }
@@ -141,6 +141,86 @@
       "food": "Da",
       "spotNumber": "1",
       "id": 9
+    },
+    {
+      "firstName": "Jovan",
+      "lastName": "Bankovic",
+      "yearOfStudy": "Elektronski",
+      "faculty": "Rii",
+      "course": "Rii",
+      "food": "Da",
+      "spotNumber": "1",
+      "id": 10
+    },
+    {
+      "firstName": "Jovan",
+      "lastName": "Bankovic",
+      "yearOfStudy": "Elektronski",
+      "faculty": "Rii",
+      "course": "3",
+      "food": "Da",
+      "spotNumber": "1",
+      "id": 11
+    },
+    {
+      "firstName": "Dd",
+      "lastName": "Dd",
+      "yearOfStudy": "D",
+      "faculty": "Dd",
+      "course": "Dd",
+      "food": "Da",
+      "spotNumber": "1",
+      "id": 12
+    },
+    {
+      "firstName": "Bb",
+      "lastName": "Bb",
+      "yearOfStudy": "Bb",
+      "faculty": "Bb",
+      "course": "Bb",
+      "food": "Da",
+      "spotNumber": "1",
+      "id": 13
+    },
+    {
+      "firstName": "Ff",
+      "lastName": "Ff",
+      "yearOfStudy": "Ff",
+      "faculty": "Ff",
+      "course": "Ff",
+      "food": "Ne",
+      "spotNumber": "3",
+      "id": 14
+    },
+    {
+      "firstName": "Dsds",
+      "lastName": "Dsds",
+      "yearOfStudy": "Dssd",
+      "faculty": "Dssd",
+      "course": "Dsdsds",
+      "food": "Da",
+      "spotNumber": "1",
+      "id": 15
+    },
+    {
+      "firstName": "Fff",
+      "lastName": "Ff",
+      "yearOfStudy": "Ff",
+      "faculty": "Ff",
+      "course": "Ff",
+      "food": "Ne",
+      "spotNumber": "2",
+      "id": 16
+    },
+    {
+      "firstName": "Fggg",
+      "lastName": "Ggg",
+      "yearOfStudy": "Ggg",
+      "faculty": "Ggg",
+      "course": "Hhh",
+      "food": "Da",
+      "spotNumber": "5",
+      "id": 17
     }
   ]
 }

@@ -2,7 +2,7 @@ import {
 	getLibrary,
 	eventOnInput,
 	onPrijavaEvent
-} from "./services/citaonica-services";
+} from "./services/library-services";
 import { nacrtajModal, modalPrijava } from "./services/modal"
 import Library from "./models/library";
 

@@ -19,7 +19,7 @@
       "worksTo": "20:00",
       "sockets": 7,
       "spots": 100,
-      "takenSpots": 98,
+      "takenSpots": 99,
       "cleaningLadies": {
         "1": 2
       }
@@ -53,96 +53,6 @@
   ],
   "members": [
     {
-      "firstName": "A",
-      "lastName": "A",
-      "yearOfStudy": "A",
-      "faculty": "A",
-      "course": "A",
-      "food": "Da",
-      "spotNumber": "1",
-      "id": 1
-    },
-    {
-      "firstName": "B",
-      "lastName": "B",
-      "yearOfStudy": "B",
-      "faculty": "B",
-      "course": "B",
-      "food": "Ne",
-      "spotNumber": "2",
-      "id": 2
-    },
-    {
-      "firstName": "A",
-      "lastName": "A",
-      "yearOfStudy": "A",
-      "faculty": "A",
-      "course": "A",
-      "food": "Da",
-      "spotNumber": "1",
-      "id": 3
-    },
-    {
-      "firstName": "B",
-      "lastName": "B",
-      "yearOfStudy": "B",
-      "faculty": "B",
-      "course": "B",
-      "food": "Ne",
-      "spotNumber": "2",
-      "id": 4
-    },
-    {
-      "firstName": "Aaa",
-      "lastName": "Aaa",
-      "yearOfStudy": "Aaa",
-      "faculty": "Aaa",
-      "course": "Aaa",
-      "food": "Da",
-      "spotNumber": "1",
-      "id": 5
-    },
-    {
-      "firstName": "Bbb",
-      "lastName": "Bbb",
-      "yearOfStudy": "Bbb",
-      "faculty": "Bbb",
-      "course": "Bbb",
-      "food": "Ne",
-      "spotNumber": "2",
-      "id": 6
-    },
-    {
-      "firstName": "Bccc",
-      "lastName": "Ccc",
-      "yearOfStudy": "Cc",
-      "faculty": "Ccc",
-      "course": "Ccc",
-      "food": "Da",
-      "spotNumber": "1",
-      "id": 7
-    },
-    {
-      "firstName": "Sdf",
-      "lastName": "Dfs",
-      "yearOfStudy": "Fdssg",
-      "faculty": "Ggg",
-      "course": "Ggg",
-      "food": "Da",
-      "spotNumber": "1",
-      "id": 8
-    },
-    {
-      "firstName": "Aaa",
-      "lastName": "Aaa",
-      "yearOfStudy": "Aaa",
-      "faculty": "Bbb",
-      "course": "Ccc",
-      "food": "Da",
-      "spotNumber": "1",
-      "id": 9
-    },
-    {
       "firstName": "Jovan",
       "lastName": "Bankovic",
       "yearOfStudy": "Elektronski",
@@ -150,77 +60,17 @@
       "course": "Rii",
       "food": "Da",
       "spotNumber": "1",
-      "id": 10
+      "id": 1
     },
     {
-      "firstName": "Jovan",
-      "lastName": "Bankovic",
-      "yearOfStudy": "Elektronski",
+      "firstName": "Nikola",
+      "lastName": "Antic",
+      "yearOfStudy": "Rii",
       "faculty": "Rii",
-      "course": "3",
-      "food": "Da",
-      "spotNumber": "1",
-      "id": 11
-    },
-    {
-      "firstName": "Dd",
-      "lastName": "Dd",
-      "yearOfStudy": "D",
-      "faculty": "Dd",
-      "course": "Dd",
-      "food": "Da",
-      "spotNumber": "1",
-      "id": 12
-    },
-    {
-      "firstName": "Bb",
-      "lastName": "Bb",
-      "yearOfStudy": "Bb",
-      "faculty": "Bb",
-      "course": "Bb",
-      "food": "Da",
-      "spotNumber": "1",
-      "id": 13
-    },
-    {
-      "firstName": "Ff",
-      "lastName": "Ff",
-      "yearOfStudy": "Ff",
-      "faculty": "Ff",
-      "course": "Ff",
+      "course": "Rii",
       "food": "Ne",
       "spotNumber": "3",
-      "id": 14
-    },
-    {
-      "firstName": "Dsds",
-      "lastName": "Dsds",
-      "yearOfStudy": "Dssd",
-      "faculty": "Dssd",
-      "course": "Dsdsds",
-      "food": "Da",
-      "spotNumber": "1",
-      "id": 15
-    },
-    {
-      "firstName": "Fff",
-      "lastName": "Ff",
-      "yearOfStudy": "Ff",
-      "faculty": "Ff",
-      "course": "Ff",
-      "food": "Ne",
-      "spotNumber": "2",
-      "id": 16
-    },
-    {
-      "firstName": "Fggg",
-      "lastName": "Ggg",
-      "yearOfStudy": "Ggg",
-      "faculty": "Ggg",
-      "course": "Hhh",
-      "food": "Da",
-      "spotNumber": "5",
-      "id": 17
+      "id": 2
     }
   ]
 }

@@ -7,7 +7,7 @@
       "worksTo": "20:00",
       "sockets": 5,
       "spots": 150,
-      "takenSpots": 148,
+      "takenSpots": 147,
       "cleaningLadies": {
         "1": 2
       }
@@ -19,7 +19,7 @@
       "worksTo": "20:00",
       "sockets": 7,
       "spots": 100,
-      "takenSpots": 99,
+      "takenSpots": 97,
       "cleaningLadies": {
         "1": 2
       }
@@ -31,7 +31,7 @@
       "worksTo": "19:00",
       "sockets": 12,
       "spots": 50,
-      "takenSpots": 49,
+      "takenSpots": 47,
       "cleaningLadies": {
         "1": 2
       }
@@ -52,25 +52,6 @@
     }
   ],
   "members": [
-    {
-      "firstName": "Jovan",
-      "lastName": "Bankovic",
-      "yearOfStudy": "Elektronski",
-      "faculty": "Rii",
-      "course": "Rii",
-      "food": "Da",
-      "spotNumber": "1",
-      "id": 1
-    },
-    {
-      "firstName": "Nikola",
-      "lastName": "Antic",
-      "yearOfStudy": "Rii",
-      "faculty": "Rii",
-      "course": "Rii",
-      "food": "Ne",
-      "spotNumber": "3",
-      "id": 2
-    }
+
   ]
 }

@@ -25,7 +25,7 @@ export function nacrtajModal(host: HTMLDivElement)
     p3.innerHTML="Prijava u citaonicu se vrsi popunjavanjem podataka koji se nalaze sa desne strane liste i klikom na dugme (Sacuvaj prijavu) <br> Nakon prijavljivanja u grafickom prikazu citaonice bice prikazano vase mesto gde ste se prijavili.";
     modalbody.appendChild(p3);
     const p4 = document.createElement('p');
-    p4.innerHTML="VAZNO OBAVESTENJE! Tetkice u citaonici na svakih 3 minuta rade proveru unosenja hrane u citaonicu, jer je to zabranjeno. <br> Svako ko je u prijavi stavio Hrana: Da ima 30% sanse da bude izbacen iz citaonice."
+    p4.innerHTML="VAZNO OBAVESTENJE! Tetkice u citaonici na svakih 2 minuta rade proveru unosenja hrane u citaonicu, jer je to zabranjeno. <br> Svako ko je u prijavi stavio Hrana: Da ima 30% sanse da bude izbacen iz citaonice."
     modalbody.appendChild(p4);
 
     const modalfooter = document.createElement('div');

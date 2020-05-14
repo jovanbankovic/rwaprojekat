@@ -35,7 +35,7 @@ export default class Library
             host.appendChild(descriptionOfLibrary);
             descriptionOfLibrary.className="descriptionCitaonice";
 
-            descriptionOfLibrary.innerHTML = this.name + "<br>" + "Radno vreme: " + this.worksFrom + "/" + this.worksTo + "<br>" + "Broj uticnica: " +this.sockets + "<br>" + "Lista dezurnih tetkica: ";
+            descriptionOfLibrary.innerHTML = this.name + "<br>" + "Radno vreme: " + this.worksFrom + "/" + this.worksTo + "<br>" + "Mesta: " + this.spots + "<br>" + "Broj uticnica: " +this.sockets + "<br>" + "Lista dezurnih tetkica: ";
 
             const cleaningLadiesList = document.createElement("ul");
             cleaningLadiesList.className="listaTetkica";
@@ -60,6 +60,7 @@ export default class Library
             this.drawSpots(leftSpots, rightSpots);
             this.paintSockets();
             this.createDescriptionOfSeats(cleaningLadiesList);
+            this.drawTakenPlacesInLibrary();
         }
     }
 
@@ -145,5 +146,16 @@ export default class Library
         redSeat.style.background="red";
         redSeat.innerHTML="Zauzeto mesto";
         legend.appendChild(redSeat);
+    }
+
+    drawTakenPlacesInLibrary()
+    {
+        var randomSeat = 1;
+        for(var i = 0; i < this.takenSpots;i++)
+        {
+            (document.getElementById('mestosed' + randomSeat) as HTMLButtonElement).style.background="red";
+            (document.getElementById('mestosed' + randomSeat) as HTMLButtonElement).title="Zauzeto";
+            randomSeat++;
+        }
     }
 }
